@@ -15,11 +15,11 @@ This is the mode in which the modifications are applied to the original file. If
 #### Parameters
 The script takes three **must-use** parameters and one optional parameter.
 
-**-f**  **-** Specify the file that needs to be cleaned up.
-**-b** **-** Specify the begin pattern of the malicious code.
-**-e** **-** Specify the end pattern of the malicious code.
+**-f**  **-** Specify the file that needs to be cleaned up <br />
+**-b** **-** Specify the begin pattern of the malicious code <br />
+**-e** **-** Specify the end pattern of the malicious code <br />
 
-**Optional**
+**Optional** <br />
 **--dry-run** **-** Execute the script in dry-run mode.
 
 #### Syntax
@@ -37,7 +37,7 @@ asdkjpjdkadfj]dsfjqrqow[idndnpqkjfdpoqwjksdfnvkdfjqkpwrjpoqwfjdwnfkdfdfsdfsdfadq
 wdgfoiwrgwpjtpweqtjrwpejrwpoerjweporfjgnwortjipwejtriwepojtripowetjrwrptjwirt
 ());};
 
-$ ./malclean_args1.py -f maltext.txt -b ";if(ndsw===undefined)" -e "());};" --dry-run
+$ ./malclean.py -f maltext.txt -b ";if(ndsw===undefined)" -e "());};" --dry-run
 asdkjpjdkadfj]dsfjqrqow[idndnpqkjfdpoqwjksdfnvkdfjqkpwrjpoqwfjdwnfkdfdfsdfsdfadqwdqwd
 
 $ cat maltext.txt 
@@ -55,7 +55,7 @@ asdkjpjdkadfj]dsfjqrqow[idndnpqkjfdpoqwjksdfnvkdfjqkpwrjpoqwfjdwnfkdfdfsdfsdfadq
 wdgfoiwrgwpjtpweqtjrwpejrwpoerjweporfjgnwortjipwejtriwepojtripowetjrwrptjwirt
 ());};
 
-$ ./malclean_args1.py -f maltext.txt -b ";if(ndsw===undefined)" -e "());};"
+$ ./malclean.py -f maltext.txt -b ";if(ndsw===undefined)" -e "());};"
 
 $ cat maltext.txt 
 asdkjpjdkadfj]dsfjqrqow[idndnpqkjfdpoqwjksdfnvkdfjqkpwrjpoqwfjdwnfkdfdfsdfsdfadqwdqwd
